@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import scraperwiki
 import lxml.html
 import csv

@@ -3,6 +3,10 @@
 import scraperwiki
 import lxml.html
 import csv
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8') 
 
 html = scraperwiki.scrape("http://www.boc.cn/sourcedb/whpj/index.html")
 

@@ -37,6 +37,9 @@ for tr in my_table.cssselect("tr"):
         list.append(data_set)
 print(list)
 
+table = scraperwiki.sqlite.save(unique_keys=['货币名称'], data=list)
+
+
 with open('test.csv', 'w') as csvfile:
     fieldnames = ["货币名称", "现汇买入价","现钞买入价","现汇卖出价","现钞卖出价","中行折算价","发布日期","发布时间"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)

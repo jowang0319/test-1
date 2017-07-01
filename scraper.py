@@ -42,7 +42,7 @@ print(list)
 pre_url = "http://www.boc.cn/sourcedb/whpj/index_"
 post_url = ".html"
 
-for i in range (1,21):
+for i in range (1,10):
     page_url = pre_url + str(i) + post_url
     html = scraperwiki.scrape(page_url)
     
